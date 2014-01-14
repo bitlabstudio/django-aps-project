@@ -1,0 +1,9 @@
+[submodule "aps_project/submodules/bootstrap"]
+	path = aps_project/submodules/bootstrap
+	url = git://github.com/twbs/bootstrap.git
+[submodule "aps_project/submodules/bootstrap-modal"]
+	path = aps_project/submodules/bootstrap-modal
+	url = git://github.com/jschr/bootstrap-modal/
+[submodule "aps_project/submodules/bootstrap-datetimepicker"]
+	path = aps_project/submodules/bootstrap-datetimepicker
+	url = git://github.com/tarruda/bootstrap-datetimepicker
