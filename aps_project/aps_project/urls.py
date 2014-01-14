@@ -35,5 +35,4 @@ urlpatterns += patterns(
     url(r'^p/(?P<template_path>.*)$',
         RapidPrototypingView.as_view(),
         name='prototype'),
-    url(r'^$', RedirectView.as_view(url='/p/proto/home.html')),
 )
