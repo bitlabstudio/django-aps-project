@@ -4,8 +4,6 @@ from django.conf.urls import patterns, include, url
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-from django.views.generic import RedirectView
-
 from django_libs.views import RapidPrototypingView
 
 
@@ -35,10 +33,13 @@ urlpatterns += patterns(
     url(r'^p/(?P<template_path>.*)$',
         RapidPrototypingView.as_view(),
         name='prototype'),
+    url(r'^bom/', include('aps_bom.urls')),
+    url(r'^purchasing/', include('aps_purchasing.urls')),
 )
 
 if settings.DEBUG:
     import debug_toolbar
-    urlpatterns += patterns('',
+    urlpatterns += patterns(
+        '',
         url(r'^__debug__/', include(debug_toolbar.urls)),
     )
