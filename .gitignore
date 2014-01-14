@@ -8,6 +8,6 @@ db.sqlite
 debugger.log
 docs/build/
 docs/source/api/
-fab_settings.py
+fabfile_settings.py
 local_settings.py
 locale

@@ -1,1 +1,0 @@
-../../../../submodules/bootstrap-modal/js/bootstrap-modalmanager.js
