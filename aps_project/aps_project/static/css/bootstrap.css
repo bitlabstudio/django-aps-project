@@ -5855,6 +5855,12 @@ td.visible-print {
   font-family: "entypo";
   font-size: 28px;
 }
+#bomtable tfoot {
+  font-size: 10px;
+}
+#bomtable tfoot input {
+  padding: 3px 4px;
+}
 form .form-group input[type="text"],
 form .form-group textarea,
 form .form-group select {

@@ -11,7 +11,8 @@
       }
     </style>
     <link href="{% static "css/bootstrap.css" %}" rel="stylesheet" media="screen">
-    <link href="{{ STATIC_URL }}css/libs/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" />
+    <link href="{% static "aps_purchasing/css/jquery.dataTables.css" %}" rel="stylesheet" media="screen">
+    <link href="{% static "css/libs/jquery-ui-1.10.3.custom.min.css" %}" rel="stylesheet" />
     {% block extrahead %}{% endblock %}
 </head>
 <body>
@@ -48,6 +49,7 @@
 
 <script src="{% static "js/libs/bootstrap.min.js" %}"></script>
 <script src="{% static "js/libs/holder.js" %}"></script>
+<script src="{% static "aps_purchasing/js/jquery.dataTables.min.js" %}"></script>
 <script src="{% static "rapid_prototyping/js/calculate_total.js" %}"></script>
 
 {% block extrajs %}{% endblock %}
