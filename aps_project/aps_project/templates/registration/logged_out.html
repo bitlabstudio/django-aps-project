@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Logout" %}{% endblock %}
+
+{% block main %}
+<div class="col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4 col-lg-offset-4 col-lg-4">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <p>{% trans "You've been logged out. Thanks for using our service. See you next time!" %}</p>
+            <a class="btn btn-primary" href="{% url "login" %}">{% trans "Login again" %}</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

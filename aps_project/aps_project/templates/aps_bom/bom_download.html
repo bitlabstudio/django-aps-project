@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block main %}
+    <h1>{% trans "Download BOM.csv converted from CBOM " %} "{{ object }}"</h1>
+    <h2>{% trans "Contents of" %} "{{ bom.description }}"</h2>
+    <table>
+        <tr>
+            <th>{% trans "Position" %}</th>
+            <th>{% trans "IPN" %}</th>
+            <th>{% trans "Description" %}</th>
+            <th>{% trans "QTY" %}</th>
+            <th>{% trans "Unit" %}</th>
+            <th>{% trans "Shape" %}</th>
+        </tr>
+        {% for item in bom_items %}
+            <tr>
+                <td>{{ item.position }}</td>
+                <td>{{ item.ipn.code }}</td>
+                <td>{{ item.ipn.name }}</td>
+                <td>{{ item.qty }}</td>
+                <td>{{ item.unit.code }}</td>
+                <td>{{ item.ipn.shape.code }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    <p><a href="{{ csv_file }}">Download BOM.csv</a></p>
+{% endblock %}

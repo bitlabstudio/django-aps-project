@@ -37,6 +37,7 @@ urlpatterns += patterns(
     url(r'^p/(?P<template_path>.*)$',
         RapidPrototypingView.as_view(),
         name='prototype'),
+    url(r'^accounts/', include('django.contrib.auth.urls')),
     url(r'^bom/', include('aps_bom.urls')),
     url(r'^purchasing/', include('aps_purchasing.urls')),
 )
