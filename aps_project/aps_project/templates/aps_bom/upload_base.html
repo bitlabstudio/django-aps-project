@@ -13,3 +13,10 @@
         <p><input class="btn btn-primary" type="submit" value="{% trans "Upload" %}"></p>
     </form>
 {% endblock %}
+{% block extrajs %}
+    <script>
+        $(document).ready(function() {
+            $('#id_version_date').datepicker();
+        });
+    </script>
+{% endblock %}

@@ -5,3 +5,4 @@ os.environ.setdefault(
     "DJANGO_SETTINGS_MODULE", "aps_project.settings")
 
 from development_fabfile.fabfile import *
+from fabfile.local import *

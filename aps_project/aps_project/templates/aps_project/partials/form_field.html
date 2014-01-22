@@ -1,6 +1,6 @@
 <div class="form-group {% if field.errors %}has-error{% endif %}"{% if field.field.hidden %} style="display: none;"{% endif %}>
     <label class="control-label" for="{{ field.id_for_label }}">
-        <span {% if field.field.required %}class="requiredLabel"{% endif %}>{{ field.label }} *</span>
+        <span {% if field.field.required %}class="requiredLabel"{% endif %}>{{ field.label }}</span>
         {% if field.help_text %}
             <span class="glyphicon glyphicon-question-sign popOver" title="{{ field.label }}" data-content="{{ field.help_text }}"></span>
         {% endif %}

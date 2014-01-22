@@ -1,0 +1,186 @@
+[
+{
+    "pk": 1, 
+    "model": "aps_bom.bom", 
+    "fields": {
+        "ipn": 2, 
+        "description": "BOM 1 from cBOM 1"
+    }
+},
+{
+    "pk": 1, 
+    "model": "aps_bom.bomitem", 
+    "fields": {
+        "position": "R15", 
+        "ipn": 1, 
+        "bom": 1, 
+        "unit": 1, 
+        "qty": 1.0
+    }
+},
+{
+    "pk": 2, 
+    "model": "aps_bom.bomitem", 
+    "fields": {
+        "position": "R17", 
+        "ipn": 4, 
+        "bom": 1, 
+        "unit": 1, 
+        "qty": 1.0
+    }
+},
+{
+    "pk": 1, 
+    "model": "aps_bom.cbom", 
+    "fields": {
+        "customer": 1, 
+        "product": "cBOM Upload Tester", 
+        "html_link": "", 
+        "description": "cBOM Upload 1", 
+        "version_date": "2014-01-22"
+    }
+},
+{
+    "pk": 1, 
+    "model": "aps_bom.cbomitem", 
+    "fields": {
+        "epn": 1, 
+        "qty": 1.0, 
+        "consign": true, 
+        "bom": 1, 
+        "position": "R15", 
+        "unit": 1
+    }
+},
+{
+    "pk": 2, 
+    "model": "aps_bom.cbomitem", 
+    "fields": {
+        "epn": 2, 
+        "qty": 1.0, 
+        "consign": true, 
+        "bom": 1, 
+        "position": "R17", 
+        "unit": 1
+    }
+},
+{
+    "pk": 1, 
+    "model": "aps_bom.company", 
+    "fields": {
+        "country": 1, 
+        "code": "BITMAZK", 
+        "description": "Bitmazk Pt. Ltd."
+    }
+},
+{
+    "pk": 1, 
+    "model": "aps_bom.country", 
+    "fields": {
+        "code": "DE", 
+        "description": "Germany"
+    }
+},
+{
+    "pk": 1, 
+    "model": "aps_bom.epn", 
+    "fields": {
+        "epn": "945382", 
+        "company": 1, 
+        "ipn": 3, 
+        "description": "10k 5% TPK100", 
+        "cpn": 1
+    }
+},
+{
+    "pk": 2, 
+    "model": "aps_bom.epn", 
+    "fields": {
+        "epn": "743629", 
+        "company": 1, 
+        "ipn": 5, 
+        "description": "50R 2% TPK50", 
+        "cpn": 4
+    }
+},
+{
+    "pk": 1, 
+    "model": "aps_bom.ipn", 
+    "fields": {
+        "price_group": 1, 
+        "price_max": "10.000", 
+        "shape": 1, 
+        "code": "CPN11321", 
+        "name": "CPN 11321"
+    }
+},
+{
+    "pk": 2, 
+    "model": "aps_bom.ipn", 
+    "fields": {
+        "price_group": 1, 
+        "price_max": "122.000", 
+        "shape": 1, 
+        "code": "IPN55454", 
+        "name": "IPN 55454"
+    }
+},
+{
+    "pk": 3, 
+    "model": "aps_bom.ipn", 
+    "fields": {
+        "price_group": 1, 
+        "price_max": "122.000", 
+        "shape": 1, 
+        "code": "IPN55454", 
+        "name": "IPN 55454"
+    }
+},
+{
+    "pk": 4, 
+    "model": "aps_bom.ipn", 
+    "fields": {
+        "price_group": 1, 
+        "price_max": "22.000", 
+        "shape": 1, 
+        "code": "CPN991", 
+        "name": "CPN 991"
+    }
+},
+{
+    "pk": 5, 
+    "model": "aps_bom.ipn", 
+    "fields": {
+        "price_group": 1, 
+        "price_max": "43.000", 
+        "shape": 1, 
+        "code": "IPN45582", 
+        "name": "IPN 45582"
+    }
+},
+{
+    "pk": 1, 
+    "model": "aps_bom.pricegroup", 
+    "fields": {
+        "add": "0.00000", 
+        "code": "A", 
+        "rate": "1.00000"
+    }
+},
+{
+    "pk": 1, 
+    "model": "aps_bom.shape", 
+    "fields": {
+        "code": "rnd", 
+        "name": "round"
+    }
+},
+{
+    "pk": 1, 
+    "model": "aps_bom.unit", 
+    "fields": {
+        "code": "pcs", 
+        "description": "Pieces"
+    }
+}
+]

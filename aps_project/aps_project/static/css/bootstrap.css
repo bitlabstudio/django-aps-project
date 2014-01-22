@@ -5920,3 +5920,6 @@ textareaform .form-group textarea,
 textareaform .form-group select {
   height: auto;
 }
+.requiredLabel:after {
+  content: ' *';
+}
