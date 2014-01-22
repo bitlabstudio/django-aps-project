@@ -4,6 +4,8 @@ from django.conf.urls import patterns, include, url
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.views.generic import TemplateView
+
 from django_libs.views import RapidPrototypingView
 
 
@@ -29,6 +31,8 @@ if settings.DEBUG is False and settings.SANDBOX is True:
 urlpatterns += patterns(
     '',
     url(settings.ADMIN_URL, include(admin.site.urls)),
+    url('^$', TemplateView.as_view(template_name='aps_project/home.html'),
+        name='aps_project_home'),
     url(r'^p/', include('rapid_prototyping.urls')),
     url(r'^p/(?P<template_path>.*)$',
         RapidPrototypingView.as_view(),
