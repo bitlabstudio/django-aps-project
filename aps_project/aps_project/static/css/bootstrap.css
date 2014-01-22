@@ -5855,7 +5855,7 @@ td.visible-print {
   font-family: "entypo";
   font-size: 28px;
 }
-form .form-group input,
+form .form-group input[type="text"],
 form .form-group textarea,
 form .form-group select {
   display: block;
@@ -5874,7 +5874,7 @@ form .form-group select {
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
-form .form-group input:focus,
+form .form-group input[type="text"]:focus,
 form .form-group textarea:focus,
 form .form-group select:focus {
   border-color: #66afe9;
@@ -5882,40 +5882,40 @@ form .form-group select:focus {
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
-form .form-group input:-moz-placeholder,
+form .form-group input[type="text"]:-moz-placeholder,
 form .form-group textarea:-moz-placeholder,
 form .form-group select:-moz-placeholder {
   color: #999999;
 }
-form .form-group input::-moz-placeholder,
+form .form-group input[type="text"]::-moz-placeholder,
 form .form-group textarea::-moz-placeholder,
 form .form-group select::-moz-placeholder {
   color: #999999;
   opacity: 1;
 }
-form .form-group input:-ms-input-placeholder,
+form .form-group input[type="text"]:-ms-input-placeholder,
 form .form-group textarea:-ms-input-placeholder,
 form .form-group select:-ms-input-placeholder {
   color: #999999;
 }
-form .form-group input::-webkit-input-placeholder,
+form .form-group input[type="text"]::-webkit-input-placeholder,
 form .form-group textarea::-webkit-input-placeholder,
 form .form-group select::-webkit-input-placeholder {
   color: #999999;
 }
-form .form-group input[disabled],
+form .form-group input[type="text"][disabled],
 form .form-group textarea[disabled],
 form .form-group select[disabled],
-form .form-group input[readonly],
+form .form-group input[type="text"][readonly],
 form .form-group textarea[readonly],
 form .form-group select[readonly],
-fieldset[disabled] form .form-group input,
+fieldset[disabled] form .form-group input[type="text"],
 fieldset[disabled] form .form-group textarea,
 fieldset[disabled] form .form-group select {
   cursor: not-allowed;
   background-color: #eeeeee;
 }
-textareaform .form-group input,
+textareaform .form-group input[type="text"],
 textareaform .form-group textarea,
 textareaform .form-group select {
   height: auto;
