@@ -5929,3 +5929,6 @@ textareaform .form-group select {
 .requiredLabel:after {
   content: ' *';
 }
+.expand {
+  width: 100%;
+}
