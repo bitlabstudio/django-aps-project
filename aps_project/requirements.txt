@@ -5,6 +5,7 @@ django==1.6.1
 django-rapid-prototyping==0.9
 django-aps-bom==0.5.13
 django-aps-purchasing==0.2
+django-aps-process==0.1,
 
 
 # =============================================================================

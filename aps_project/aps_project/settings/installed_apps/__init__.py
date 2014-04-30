@@ -16,7 +16,8 @@ EXTERNAL_APPS = [
     'south',
     'rapid_prototyping',
     'aps_bom',
-    'aps_purchasing'
+    'aps_purchasing',
+    'aps_process',
 ]
 
 INTERNAL_APPS = [
