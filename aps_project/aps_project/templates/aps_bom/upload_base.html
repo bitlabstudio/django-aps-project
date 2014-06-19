@@ -4,12 +4,20 @@
 {% block main %}
     <form action="." method="post" class="col-md-4" enctype="multipart/form-data">
         {% csrf_token %}
-        {% for error in form.non_field_errors %}
-            <p>{{ error|safe }}</p>
-        {% endfor %}
+        {# TODO part of a temporary workaround to catch errors from duplicate IPN entries #}
+        {% if not form.errors.ipn %}
+            {% for error in form.non_field_errors %}
+                <p>{{ error|safe }}</p>
+            {% endfor %}
+        {% else %}
+            {% for error in form.errors.ipn %}
+                <p class="text-danger">{{ error|safe }}</p>
+            {% endfor %}
+        {% endif %}
         {% for field in form  %}
             {% include "aps_project/partials/form_field.html" with field=field %}
         {% endfor %}
+
         <p><input class="btn btn-primary" type="submit" value="{% trans "Upload" %}"></p>
     </form>
 {% endblock %}
