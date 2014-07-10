@@ -1,5 +1,8 @@
 {% extends "aps_bom/upload_base.html" %}
-{% load i18n %}
+{% load i18n static %}
 {% block headline %}
     <h1>{% trans "Upload a CBOM.csv file" %}</h1>
+{% endblock %}
+{% block extra_upload_main %}
+    <p><a href="{% static "aps_bom/cBOM_template.csv" %}" target="_blank"><span class="entypo">&#128196;</span> {% trans "Download cBOM template" %}</a></p>
 {% endblock %}
