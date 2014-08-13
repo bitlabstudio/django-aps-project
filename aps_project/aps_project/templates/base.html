@@ -23,6 +23,11 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
+            {% if messages %}
+                {% for message in messages %}
+                    <p {% if message.tags %} class="alert alert-{{ message.tags }}"{% endif %}>{{ message }}</p>
+                {% endfor %}
+            {% endif %}
             {% block headline %}{% endblock %}
             {% block main %}{% endblock %}
         </div>

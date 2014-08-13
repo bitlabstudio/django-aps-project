@@ -7,6 +7,10 @@
     }
 }
 
+.expand {
+    width: 100%;
+}
+
 form {
     .form-group {
         input[type="text"], input[type="password"], textarea, select {
@@ -15,10 +19,23 @@ form {
     }
 }
 
-.requiredLabel:after {
-    content: ' *',
+
+.margin-top {
+    margin-top: @default-margin;
 }
 
-.expand {
-    width: 100%;
+.margin-right {
+    margin-right: @default-margin;
+}
+
+.margin-bottom {
+    margin-bottom: @default-margin;
+}
+
+.margin-left {
+    margin-left: @default-margin;
+}
+
+.requiredLabel:after {
+    content: ' *',
 }

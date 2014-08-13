@@ -5862,6 +5862,9 @@ td.visible-print {
 #bomtable tfoot input {
   padding: 3px 4px;
 }
+.expand {
+  width: 100%;
+}
 form .form-group input[type="text"],
 form .form-group input[type="password"],
 form .form-group textarea,
@@ -5937,9 +5940,18 @@ textareaform .form-group textarea,
 textareaform .form-group select {
   height: auto;
 }
+.margin-top {
+  margin-top: 20px;
+}
+.margin-right {
+  margin-right: 20px;
+}
+.margin-bottom {
+  margin-bottom: 20px;
+}
+.margin-left {
+  margin-left: 20px;
+}
 .requiredLabel:after {
   content: ' *';
-}
-.expand {
-  width: 100%;
 }
