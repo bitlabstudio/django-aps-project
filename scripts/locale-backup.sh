@@ -13,6 +13,6 @@ done
 
 DATE=`date +%Y%m%d%H%M%S`
 rm -f $BACKUPFOLDER/.locale-${DATE}.tgz_INPROGRESS
-tar -cvzpf $BACKUPFOLDER/.locale-${DATE}.tgz_INPROGRESS ~/webapps/$DJANGO_APP_NAME/$PROJECTNAME/locale
-mv -f $BACKUPFOLDER/.locale-${DATE}.tgz_INPROGRESS $HOME/$BACKUPFOLDER/locale-${DATE}.tgz
+tar -cvzpf $BACKUPFOLDER/.locale-${DATE}.tgz_INPROGRESS ~/webapps/$DJANGO_APP_NAME/locale
+mv -f $BACKUPFOLDER/.locale-${DATE}.tgz_INPROGRESS $BACKUPFOLDER/locale-${DATE}.tgz
 exit 0

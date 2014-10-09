@@ -2,4 +2,4 @@
 source $HOME/bin/script-settings.sh
 source $HOME/Envs/$VENV_NAME/bin/activate
 
-$HOME/webapps/$DJANGO_APP_NAME/$PROJECTNAME/manage.py cleanup
+$HOME/webapps/$DJANGO_APP_NAME/manage.py cleanup
