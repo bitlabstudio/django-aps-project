@@ -10,14 +10,15 @@ DJANGO_APPS = [
 ]
 
 EXTERNAL_APPS = [
+    'aps_bom',
+    'aps_process',
+    'aps_purchasing',
     'debug_toolbar',
+    'django_extensions',
     'django_libs',
     'mailer',
-    'south',
     'rapid_prototyping',
-    'aps_bom',
-    'aps_purchasing',
-    'aps_process',
+    'south',
 ]
 
 INTERNAL_APPS = [
