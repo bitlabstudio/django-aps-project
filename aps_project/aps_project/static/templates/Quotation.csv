@@ -1,0 +1,5 @@
+"IPN","DPN","MPN","Manufacturer","Description","PKU","MOQ","Unit","Lead_time_min","Lead_time_max","Price","Currency"
+"for reference only","MMU0102AC5009GB300","MMU0102AC5009GB300","TDK","50R 2% TPK50",5000,15000,"pcs",14,21,0.00356,"USD"
+"to be ignored in upload","RC3216J103CS ","RC3216J103CS ","Samsung","10k 5% TPK100",5000,5000,"pcs",14,21,0.0021,"USD"
+"irrelevant because of ","RC3216J103CS ","RC3216J103CS ","Samsung","10k 5% TPK100",5000,25000,"pcs",14,21,0.0018,"USD"
+"n:m connections","RC3216J103CS ","RC3216J103CS ","Samsung","10k 5% TPK100",5000,50000,"pcs",14,21,0.0015,"USD"
