@@ -3,9 +3,10 @@ django-libs==1.59.5
 django==1.6.1
 -e git+https://github.com/pinax/django-mailer@919805e25fc18b06487b25414d4e5d5e05a92108#egg=mailer
 django-rapid-prototyping==0.9
-django-aps-bom==0.5.18
+django-aps-bom==0.6.3
 django-aps-purchasing==0.4
 django-aps-process==0.1.1
+django-aps-production==0.1
 
 
 # =============================================================================

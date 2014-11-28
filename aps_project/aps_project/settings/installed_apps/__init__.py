@@ -13,6 +13,7 @@ EXTERNAL_APPS = [
     'aps_bom',
     'aps_process',
     'aps_purchasing',
+    'aps_production',
     'debug_toolbar',
     'django_extensions',
     'django_libs',
